@@ -6,6 +6,10 @@
 class Calculator:
     num = 100
 
+    # init is keyword to declare constructor
+    def __init__(self):
+        print("I am called automatically when object is created")
+
     def getData(self):
         print("I'm now executing as method in class")
 
