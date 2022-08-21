@@ -24,3 +24,5 @@ try:
 # message error will represent by e and print the error message
 except Exception as e :
     print(e) #[Errno 2] No such file or directory: 'filelog.txt'
+finally: #will executed weather is success or error
+    print("clearing up resource")
