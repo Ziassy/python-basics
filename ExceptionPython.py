@@ -17,3 +17,10 @@ if ItemsInCart != 2:
     pass
 
 assert(ItemsInCart == 0)
+
+try:
+    with open('filelog.txt', 'r') as reader:
+        reader.read()
+# message error will represent by e and print the error message
+except Exception as e :
+    print(e) #[Errno 2] No such file or directory: 'filelog.txt'
